@@ -32,6 +32,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  applications:[applicationSchema]
 });
 
 const User = mongoose.model('User', userSchema);
